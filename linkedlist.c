@@ -65,6 +65,40 @@ typedef struct linknd{
  
  }
  
+ 
+ 
+ void genlist(void){
+ 	
+	list = create_node(0);
+	
+	
+	return;
+ }
+ 
+ void print_list(int n){
+ 	
+ 	linknd_t *ndptr;
+    int i=0;
+    
+	ndptr = (linknd_t*)list->next;
+	 
+ 	while(ndptr != NULL){
+ 		
+ 		i++;
+ 		if( i== n)
+ 		{
+ 			printf("%i-th value : %i\n", i, ndptr->data);
+ 			break;
+		 }
+		 
+ 		
+ 		ndptr=ndptr->next;
+ 		
+	 }
+ 	
+ }
+ 
+ 
 
  
  
