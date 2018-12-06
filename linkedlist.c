@@ -12,5 +12,6 @@ typedef struct linknd{
 
 
 
-linknd_t nd;
+//linknd_t nd;
 
+ static linknd_t *list; //파일 내부에서만 사용할 전역 변수 
