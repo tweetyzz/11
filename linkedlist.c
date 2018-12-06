@@ -31,7 +31,40 @@ typedef struct linknd{
 	
 	ndptr->next =NULL; //ÃÊ±âÈ­ 
  	
+ 	
  	return ndptr;
  	
  	
  }
+ 
+ 
+ 
+ void addtail(int value)
+ {
+ 	linknd_t *ndptr, *newptr;
+ 	
+ 	if (list == NULL)
+ 	 {
+ 	 	return;
+	  }
+
+ 
+    else
+    {
+    	ndptr = list;
+
+    	while(ndptr->next != NULL){
+    		ndptr = ndptr->next;
+		}
+		
+    	newptr = create_node(value);
+    	ndptr -> next = newptr;
+	}
+	
+	//ptr->next
+ 
+ }
+ 
+
+ 
+ 
